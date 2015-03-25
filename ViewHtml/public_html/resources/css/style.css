@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'helvetica-neue-condensed';
+    src: local('helvetica-neue-condensed'),
+         url('resources/font/helvetica-neue-condensed/HelveticaNeue-CondensedBold.otf') format('otf'),
+         url('resources/font/helvetica-neue-condensed/HelveticaNeue-LightCond.otf') format('otf')
+}
+@font-face {
+  font-family: 'open-sans';
+    src: local('open-sans'),
+         url('resources/font/open-sans/OpenSans-Bold.ttf') format('truetype'),
+         url('resources/font/open-sans/OpenSans-BoldItalic.ttf') format('truetype'),
+         url('resources/font/open-sans/OpenSans-ExtraBold.ttf') format('truetype'),
+         url('resources/font/open-sans/OpenSans-ExtraBoldItalic.ttf') format('truetype'),
+         url('resources/font/open-sans/OpenSans-Italic.ttf') format('truetype'),
+         url('resources/font/open-sans/OpenSans-Light.ttf') format('truetype'),
+         url('resources/font/open-sans/OpenSans-LightItalic.ttf') format('truetype'),
+         url('resources/font/open-sans/OpenSans-Regular.ttf') format('truetype'),
+         url('resources/font/open-sans/OpenSans-Semibold.ttf') format('truetype'),
+         url('resources/font/open-sans/OpenSans-SemiboldItalic.ttf') format('truetype')
+}
+.background-login {
+    background: #15404f;   
+}
+.font-login {
+    color: #cce2ea;
+    margin: 40px;
+}
+.font-login > div > div {
+    margin-bottom: 15px;
+    border: 0px;
+}
+.input-login{
+    width: 100%;
+}
+.input-login > div > div > input {
+    width: 98%;
+    background: #092934;
+    border-style: solid;
+    border-color: #06222b;
+    border-width: 1px;
+    height: 30px;
+    color: #cce2ea;
+}
+div {
+    border: 0px !important;
+    font-family: sans-serif;
+}
+.button-login{
+    background: #15404f;
+    color: #cce2ea;
+    border-color: #06222b !important;
+    border-width: 3px !important;
+    border-style: solid !important;
+    padding: 8px;
+    margin: 0 auto;
+    width: 50%;
+}
+.button-container{
+    margin-left: 80px;
+    
+    margin-right: 80px;
+}
+.link-login{
+    background: #15404f;
+    border-bottom-color: #cce2ea !important;     
+    border-bottom-width: 1px !important;     
+    border-bottom-style: solid !important;
+    color: #cce2ea;
+    width: 60%;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+.image-login{
+    background: url(../images/primary_logo_negative.png) no-repeat;
+    background-size: 120px;
+    width: 120px;
+    height: 217px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
