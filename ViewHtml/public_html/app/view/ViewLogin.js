@@ -1,58 +1,56 @@
 Ext.define('schoolBus.view.ViewLogin', {
-    extend: 'Ext.form.Panel',
+    extend: 'Ext.navigation.View',
     alias: 'widget.viewlogin',
-    requires: [
-        'Ext.form.FieldSet',
-        'Ext.field.Text',
-        'Ext.Button'
-    ],
     config: {
         cls: 'background-login',
         items: [
             {
-                xtype: 'container',
-                itemId: 'imgLogin',
-                cls: 'image-login'
-            },
-            {
-                xtype: 'fieldset',
-                cls: 'font-login',
-                title: 'E-mail',
+                xtype: 'panel',
                 items: [
                     {
-                        xtype: 'emailfield',
-                        cls: 'input-login',
-                        placeHolder: 'E-mail',
-                        name: 'userEmail',
-                        itemId: 'txtUserEmail'
-                    }
-                ]
-            },
-            {
-                xtype: 'fieldset',
-                title: 'Password',
-                cls: 'font-login',
-                items: [
+                        xtype: 'container',
+                        itemId: 'imgLogin',
+                        cls: 'image-login'
+                    },
                     {
-                        xtype: 'passwordfield',
-                        cls: 'input-login',
-                        placeHolder: 'Password',
-                        name: 'userPassword',
-                        itemId: 'txtUserPassword'
+                        xtype: 'fieldset',
+                        cls: 'font-login',
+                        title: 'E-mail',
+                        items: [
+                            {
+                                xtype: 'emailfield',
+                                cls: 'input-login',
+                                name: 'userEmail',
+                                itemId: 'txtUserEmail'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'fieldset',
+                        title: 'Password',
+                        cls: 'font-login',
+                        items: [
+                            {
+                                xtype: 'passwordfield',
+                                cls: 'input-login',
+                                name: 'userPassword',
+                                itemId: 'txtUserPassword'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'button',
+                        cls: 'button-login',
+                        itemId: 'btnLoginButton',
+                        text: 'Login'
+                    },
+                    {
+                        xtype: 'button',
+                        cls: 'link-login',
+                        itemId: 'btnNewUser',
+                        text: 'Soy nuevo, deseo registrarme!'
                     }
                 ]
-            },
-            {
-                xtype: 'button',
-                cls: 'button-login',
-                itemId: 'loginButton',
-                text: 'Login'
-            },
-            {
-                xtype: 'button',
-                cls: 'link-login',
-                itemId: 'linkButton',
-                text: 'Soy nuevo, deseo registrarme!'
             }
         ]
     }

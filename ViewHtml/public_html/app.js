@@ -1,4 +1,4 @@
-var addressServer = 'www.llevameapp.com/Ubication-war';
+//var addressServer = 'www.llevameapp.com/Ubication-war';
 Ext.application({
     requires: [
         'Ext.MessageBox'
@@ -9,6 +9,27 @@ Ext.application({
     model: [
     ],
     controllers: [
+        'CtrlLogin',
+        'CtrlProfile',
+        'CtrlGroup',
+        'CtrlProfileUpdate',
+        'CtrlPassword',
+        'CtrlNewGroup',
+        'CtrlMapGroup',
+        'CtrlMessage',
+        'CtrlSendMessage',
+        'CtrlEditGroup',
+        'CtrlMapGroupEdit',
+        'CtrlStudent',
+        'CtrlNewStudent',
+        'CtrlEditStudent',
+        'CtrlDetailStudent',
+        'CtrlSendMessageStudent',
+        'CtrlRegroup',
+        'CtrlInvitedStudent',
+        'CtrlMessageStudent',
+        'CtrlMapRoute',
+        'CtrlCheckList'
     ],
     views: [
         'ViewLogin'
